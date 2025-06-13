@@ -167,6 +167,10 @@ impl<'a> ArticleId<'a> {
 		Ok(Self::new(year, month, number, version))
 	}
 
+	// pub fn from_url(url: url::Url) -> Self {
+	// 	// url.path_segments()
+	// }
+
 	/// This allows manually creating an [`ArticleId`] from the given components without a version
 	/// (assuming it is the latest version), and will also validate each component for correctness.
 	/// If any component is invalid, it will return an [`ArticleIdError`].
